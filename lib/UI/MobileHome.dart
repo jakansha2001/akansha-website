@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:potrtfolio/Model/Method.dart';
-import 'package:potrtfolio/UI/About.dart';
 import 'package:potrtfolio/Widget/CustomText.dart';
 import 'package:flutter_page_transition/flutter_page_transition.dart';
 import 'package:potrtfolio/Widget/MobileWork.dart';
