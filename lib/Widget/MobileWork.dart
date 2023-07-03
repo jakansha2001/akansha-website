@@ -14,7 +14,7 @@ class _MobileWorkState extends State<MobileWork> {
     return ConstrainedBox(
       constraints: BoxConstraints.tightFor(
         width: size.width,
-        height: size.height * 1.7,
+        height: size.height * 2.2,
       ),
       child: Column(
         children: [
@@ -26,7 +26,7 @@ class _MobileWorkState extends State<MobileWork> {
               Expanded(
                 flex: 1,
                 child: Container(
-                    height: size.height * 1.2,
+                    height: size.height * 2.05,
                     //color: Colors.indigo,
                     child: Stack(
                       children: [
@@ -39,53 +39,72 @@ class _MobileWorkState extends State<MobileWork> {
                             endIndent: 10,
                           ),
                         ),
-                        Container(
-                          child: Center(
-                              child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.white,
-                                child: FaIcon(FontAwesomeIcons.fileCode, color: Color(0xff0A192F)),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.lightBlue,
-                                child: FaIcon(FontAwesomeIcons.hotel, color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.white,
-                                child: FlutterLogo(),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.mobileAlt, color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp, color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode, color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee, color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
-                              ),
-                            ],
-                          )),
-                        )
+                        // Container(
+                        //   child: Center(
+                        //       child: Column(
+                        //     mainAxisAlignment: MainAxisAlignment.start,
+                        //     children: [
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.white,
+                        //           child: FaIcon(FontAwesomeIcons.fileCode, color: Color(0xff0A192F)),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.lightBlue,
+                        //           child: FaIcon(FontAwesomeIcons.hotel, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.white,
+                        //           child: FlutterLogo(),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.pink,
+                        //           child: FaIcon(FontAwesomeIcons.mobileAlt, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.red,
+                        //           child: FaIcon(FontAwesomeIcons.freeCodeCamp, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.brown,
+                        //           child: FaIcon(FontAwesomeIcons.laptopCode, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.deepOrange,
+                        //           child: FaIcon(FontAwesomeIcons.coffee, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       Expanded(
+                        //         child: CircleAvatar(
+                        //           backgroundColor: Colors.deepPurple,
+                        //           child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
+                        //         ),
+                        //       ),
+                        //       SizedBox(
+                        //         height: 100,
+                        //       )
+                        //     ],
+                        //   )),
+                        // )
                       ],
                     )),
               ),
               Expanded(
                 flex: 4,
                 child: Container(
-                  height: size.height * 1.2,
+                  height: size.height * 2.1,
                   child: WorkBox(
                     titleSize: 17,
                     subTitleSize: 13,
