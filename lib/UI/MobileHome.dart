@@ -35,8 +35,7 @@ class _MobileHomeState extends State<MobileHome> {
 
   final ScrollController _controller = ScrollController();
   void _scrollToIndex(int index) {
-    final contentSize = _controller.position.viewportDimension +
-        _controller.position.maxScrollExtent;
+    final contentSize = _controller.position.viewportDimension + _controller.position.maxScrollExtent;
     final target = contentSize * index / 4;
     _controller.position.animateTo(
       target,
@@ -97,7 +96,7 @@ class _MobileHomeState extends State<MobileHome> {
               InkWell(
                 onTap: () {
                   Method().launchURL(
-                      "https://drive.google.com/file/d/194LDm-EN3M0HIUsEd_KD6QJOnJu4iHXa/view?usp=sharing");
+                      "https://drive.google.com/file/d/1Hd1M_GB30ybig2b3byRMNAnZxYZONPp4/view?usp=sharing");
                 },
                 child: CustomText(
                   text: 'Resume',
@@ -317,8 +316,7 @@ class _MobileHomeState extends State<MobileHome> {
                           letterSpacing: 0.75,
                         ),
                         CustomText(
-                          text:
-                              "Here are a few technologies I've been working with recently:\n\n",
+                          text: "Here are a few technologies I've been working with recently:\n\n",
                           textsize: 16.0,
                           color: Color(0xff828DAA),
                           fontWeight: FontWeight.w500,
@@ -548,8 +546,7 @@ class _MobileHomeState extends State<MobileHome> {
                     size: 15.0,
                   ),
                   onPressed: () {
-                    method.launchURL(
-                        "https://www.linkedin.com/in/akansha-jain-2001/");
+                    method.launchURL("https://www.linkedin.com/in/akansha-jain-2001/");
                   },
                 ),
                 IconButton(
