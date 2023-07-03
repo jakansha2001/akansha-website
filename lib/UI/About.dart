@@ -61,7 +61,7 @@ class About extends StatelessWidget {
                       width: size.width * 0.01,
                     ),
                     Container(
-                      width: size.width / 4,
+                      width: size.width / 4.3,
                       height: 1.10,
                       color: Color(0xff303C55),
                     ),
@@ -83,8 +83,7 @@ class About extends StatelessWidget {
                       letterSpacing: 0.75,
                     ),
                     CustomText(
-                      text:
-                          "Here are a few technologies I've been working with recently:\n\n",
+                      text: "Here are a few technologies I've been working with recently:\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,

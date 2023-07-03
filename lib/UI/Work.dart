@@ -75,32 +75,35 @@ class _WorkState extends State<Work> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.white,
+                                child: FaIcon(FontAwesomeIcons.fileCode, color: Color(0xff0A192F)),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.lightBlue,
+                                child: FaIcon(FontAwesomeIcons.hotel, color: Colors.white),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
                                 child: FlutterLogo(),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.mobileAlt, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.freeCodeCamp, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.laptopCode, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.coffee, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
                               ),
                             ],
                           )),

@@ -4,11 +4,7 @@ import 'package:potrtfolio/Widget/work_custom_data.dart';
 class WorkBox extends StatelessWidget {
   final double titleSize, subTitleSize, durationSize;
 
-  const WorkBox(
-      {Key key,
-      this.titleSize = 22,
-      this.subTitleSize = 13,
-      this.durationSize = 12})
+  const WorkBox({Key key, this.titleSize = 22, this.subTitleSize = 13, this.durationSize = 12})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -20,18 +16,32 @@ class WorkBox extends StatelessWidget {
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
+          title: "Software Developer",
+          subTitle: "I am currently working as a Software Developer at Mokutan Technologies",
+          duration: "April 2023 - Present",
+        ),
+        WorkCustomData(
+          titleSize: titleSize,
+          subTitleSize: subTitleSize,
+          durationSize: durationSize,
+          title: "Organiser - Flutter Conf India",
+          subTitle: "Organiser of India's largest content-centric Flutter Conference",
+          duration: "November 2022 - Present",
+        ),
+        WorkCustomData(
+          titleSize: titleSize,
+          subTitleSize: subTitleSize,
+          durationSize: durationSize,
           title: "Flutter Developer Intern",
-          subTitle:
-              "I am currently working as a Flutter Developer at A.P. Moller Maersk",
-          duration: "September 2022 - Present",
+          subTitle: "I worked as a Flutter Developer Intern at A.P. Moller Maersk",
+          duration: "September 2022 - March 2023",
         ),
         WorkCustomData(
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
           title: "Application Developer Intern (Flutter)",
-          subTitle:
-              "I worked as a Flutter Developer at RoundTechSquare",
+          subTitle: "I worked as a Flutter Developer at RoundTechSquare",
           duration: "July 2022 - August 2022",
         ),
         WorkCustomData(
@@ -65,8 +75,7 @@ class WorkBox extends StatelessWidget {
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
-          title:
-              "Mentor @Hack NSUT, @Hack'n'Solve:Devcation'22, @Amithon 1.0, @Open Force 2022",
+          title: "Mentor @Hack NSUT, @Hack'n'Solve:Devcation'22, @Amithon 1.0, @Open Force 2022",
           subTitle:
               "- Invited as a mentor in all these Hackathons held in-person or virtually.\n- Got a chance to  impart my knowledge with all the students throughout the Hackathon.",
           duration: "Jan 2022 - March 2022",

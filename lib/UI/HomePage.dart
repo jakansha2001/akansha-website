@@ -20,15 +20,13 @@ class _HomePageState extends State<HomePage> {
   bool isExpaned = true;
 
   bool get _isAppBarExpanded {
-    return _autoScrollController.hasClients &&
-        _autoScrollController.offset > (160 - kToolbarHeight);
+    return _autoScrollController.hasClients && _autoScrollController.offset > (160 - kToolbarHeight);
   }
 
   @override
   void initState() {
     _autoScrollController = AutoScrollController(
-      viewportBoundaryGetter: () =>
-          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
       axis: scrollDirection,
     )..addListener(
         () => _isAppBarExpanded
@@ -51,8 +49,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future _scrollToIndex(int index) async {
-    await _autoScrollController.scrollToIndex(index,
-        preferPosition: AutoScrollPosition.begin);
+    await _autoScrollController.scrollToIndex(index, preferPosition: AutoScrollPosition.begin);
     _autoScrollController.highlight(index);
   }
 
@@ -141,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                       InkWell(
                         onTap: () {
                           method.launchURL(
-                              "https://drive.google.com/file/d/194LDm-EN3M0HIUsEd_KD6QJOnJu4iHXa/view?usp=sharing");
+                              "https://drive.google.com/file/d/1Hd1M_GB30ybig2b3byRMNAnZxYZONPp4/view?usp=sharing");
                         },
                         hoverColor: Color(0xff64FFDA).withOpacity(0.2),
                         borderRadius: BorderRadius.circular(4.0),
@@ -224,23 +221,20 @@ class _HomePageState extends State<HomePage> {
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method
-                                  .launchURL("https://github.com/jakansha2001");
+                              method.launchURL("https://github.com/jakansha2001");
                             }),
                         IconButton(
                             icon: FaIcon(FontAwesomeIcons.twitter),
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method
-                                  .launchURL("https://twitter.com/Akansha2001");
+                              method.launchURL("https://twitter.com/Akansha2001");
                             }),
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.linkedin),
                           color: Color(0xffffA8B2D1),
                           onPressed: () {
-                            method.launchURL(
-                                "https://www.linkedin.com/in/akansha-jain-2001/");
+                            method.launchURL("https://www.linkedin.com/in/akansha-jain-2001/");
                           },
                           iconSize: 16.0,
                         ),
@@ -304,8 +298,7 @@ class _HomePageState extends State<HomePage> {
                                     height: 4.0,
                                   ),
                                   CustomText(
-                                    text:
-                                        "I design and develop apps with Flutter.",
+                                    text: "I design and develop apps with Flutter.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -335,8 +328,7 @@ class _HomePageState extends State<HomePage> {
                                     onTap: () {
                                       method.launchEmail();
                                     },
-                                    hoverColor:
-                                        Color(0xff64FFDA).withOpacity(0.2),
+                                    hoverColor: Color(0xff64FFDA).withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -346,8 +338,7 @@ class _HomePageState extends State<HomePage> {
                                         border: Border.all(
                                           color: Color(0xff64FFDA),
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(4.0),
+                                        borderRadius: BorderRadius.circular(4.0),
                                       ),
                                       child: Text(
                                         "Get In Touch",
@@ -394,12 +385,10 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       height: size.height * 0.68,
-                                      width: MediaQuery.of(context).size.width -
-                                          100,
+                                      width: MediaQuery.of(context).size.width - 100,
                                       // color: Colors.orange,
                                       child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           CustomText(
                                             text: "03. What's Next?",
@@ -426,8 +415,7 @@ class _HomePageState extends State<HomePage> {
                                                 "My inbox is always open. \nWhether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   letterSpacing: 0.75,
                                                   fontSize: 17.0,
                                                 ),
@@ -445,8 +433,7 @@ class _HomePageState extends State<HomePage> {
                                               elevation: 4.0,
                                               color: Color(0xff64FFDA),
                                               shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(6.0),
+                                                borderRadius: BorderRadius.circular(6.0),
                                               ),
                                               child: Container(
                                                 margin: EdgeInsets.all(0.85),
@@ -455,13 +442,10 @@ class _HomePageState extends State<HomePage> {
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
                                                   color: Color(0xff0A192F),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          6.0),
+                                                  borderRadius: BorderRadius.circular(6.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsets
-                                                      .symmetric(
+                                                  padding: const EdgeInsets.symmetric(
                                                     horizontal: 8.0,
                                                   ),
                                                   child: Text(
